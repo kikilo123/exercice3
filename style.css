@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    /* primary */
+    --green:hsl(75, 94%, 57%);
+    /* neutral */
+    --white:hsl(0, 0%, 100%);
+    --grey:hsl(0, 0%, 20%);
+    --dark-gray:hsl(0, 0%, 12%);
+    --off-black:hsl(0, 0%, 8%);
+    /* font */
+    --font-inter:"Inter", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-size: 16px;
+    background-color: var(--off-black);
+    font-family: var(--font-inter);
+    color: var(--white);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    background-color: var(--dark-gray);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 550px;
+}
+.butoons{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.content img{
+    border-radius: 50%;
+    width: 70px;
+    height:80px;
+    object-fit: cover;
+    margin: 20px 0 20px;
+}
+.item h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.item p{
+    text-align: center;
+}
+.adress{
+    color:var(--green) ;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+.metie{
+    font-size: 16px;
+    margin-bottom: 20px;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+}
+.butoons .but{
+    background-color: var(--grey);
+    color: var(--white);
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+    padding: 10px;
+    margin-top: 15px;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+.butoons .but:hover{
+color: var(--dark-gray);
+background-color: var(--green);
+}
+
+@media only screen and (max-width:415px){
+    .content{
+        width:350px ;
+        height:550px ;
+    }
+    .butoons .but{
+        width: 300px;
+    }
+}
